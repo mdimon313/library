@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+	span#bars {
+		display: block;
+	}
+	
+	span#close {
+		margin: 20px 0 0 20px;
+		display: block;
+		line-height: 0;
+	}
+	
+	span#close i {
+		font-size: 46px;
+		color: #fff;
+	}
+	
+	.navigation ul {
+		position: absolute;
+		top: 0;
+		width: 0;
+		right: 0;
+		height: 100%;
+		background: var(--second-color);
+		z-index: 1;
+		display: block;
+		opacity: o;
+		visibility: hidden;
+	}
+
+	.navigation ul li a {
+		color: #fff;
+		clip-path: none;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	.navigation ul li a::before, .navigation ul li a.active {
+		content: none;
+		background: transparent;
+		clip-path: none;
+	}
+}

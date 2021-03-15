@@ -10,6 +10,7 @@
 
       <link rel="stylesheet" href="assets/css/all.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
 </head>
 <body>
       
@@ -18,15 +19,18 @@
       <header id="header">
             <div class="container">
                   <nav class="navigation">
+				  
                         <a href="#" class="logo"><i class="fas fa-book"></i> Library</a>
                         <!-- !MENU -->
-                        <ul>
+                        <ul id="nav">
+							  <span id="close"><i class="fal fa-long-arrow-right hide"></i></span>
                               <li><a href="#" class="active">Home</a></li>
                               <li><a href="#">About Us</a></li>
                               <li><a href="#">Prising</a></li>
                               <li><a href="#">Blog</a></li>
                               <li><a href="#">Contact</a></li>
                         </ul>
+						<span id="bars"><i class="fas fa-bars"></i></span>
                   </nav>
             </div>
       </header>
@@ -35,11 +39,12 @@
 
       <section class="banner">
             <div class="banner-img">
+                  <img src="assets/image/bg_1.jpg" alt="bg">
                   <div class="banner-content">
                         <div class="container">
                               <div class="row">
                                     <div class="col-7">
-                                          <p class="banner-content-text">Plunge into the wonderful world of reading</p>
+                                          <p class="banner-content-text">Plunge into the wonderful <br> world of reading</p>
                                     </div>
                                     <div class="col-3">
                                           <div class="indicator">
@@ -52,10 +57,228 @@
                         </div>
                   </div>
             </div>
-            
       </section>
 
+      <!-- POPULAR BOOK -->
+
+      <section class="popular-book">
+            <div class="container">
+                  <div class="col-12">
+                        <div class="sec-title">
+                              <h3>Most Popular</h3>
+                        </div>
+                  </div>
+                  <div class="row mb-2">
+                        <div class="col-3">
+                              <div class="single-book-card card-1">
+                                    <div class="book-img">
+                                          <img src="assets/image/book1.jpg" alt="book 1">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-2">
+                                    <div class="book-img">
+                                          <img src="assets/image/book2.jpg" alt="book 2">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-3">
+                                    <div class="book-img">
+                                          <img src="assets/image/book3.jpg" alt="book 3">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-4">
+                                    <div class="book-img">
+                                          <img src="assets/image/book4.jpg" alt="book 4">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-3">
+                              <div class="single-book-card card-5">
+                                    <div class="book-img">
+                                          <img src="assets/image/book5.jpg" alt="book 5">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-6">
+                                    <div class="book-img">
+                                          <img src="assets/image/book6.jpg" alt="book 6">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-7">
+                                    <div class="book-img">
+                                          <img src="assets/image/book7.jpg" alt="book 7">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="single-book-card card-8">
+                                    <div class="book-img">
+                                          <img src="assets/image/book8.jpg" alt="book 8">
+                                    </div>
+                                    <div class="book-info">
+                                          <h3>The Road</h3>
+                                          <span>By Lorem ipsam</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- BLOG -->
+      <section id="blog">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-3">
+                              <div class="card">
+                                    <div class="card-head">
+                                          <h4>Ask a librarian</h4>
+                                    </div>
+                                    <div class="card-body">
+                                          <div class="card-icon">
+                                                <span><i class="fal fa-comment"></i></span>
+                                          </div>
+                                    
+                                          <h3><a href="#">Lorem ipsum dolor sit amet consectetur</a></h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo ducimus </p>
+
+                                          <button type="button" id="readMoreBtn">Read More</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+                                    <div class="card-head">
+                                          <h4>Innovation</h4>
+                                    </div>
+                                    <div class="card-body">
+                                          <div class="card-icon">
+                                                <span><i class="fas fa-lightbulb"></i></span>
+                                          </div>
+                                    
+                                          <h3><a href="#">Lorem ipsum dolor sit amet consectetur</a></h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo ducimus </p>
+
+                                          <button type="button" id="readMoreBtn">Read More</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+                                    <div class="card-head">
+                                          <h4>Join the library</h4>
+                                    </div>
+                                    <div class="card-body">
+                                          <div class="card-icon">
+                                                <span><i class="fal fa-edit"></i></span>
+                                          </div>
+                                    
+                                          <h3><a href="#">Lorem ipsum dolor sit amet consectetur</a></h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo ducimus </p>
+
+                                          <button type="button" id="readMoreBtn">Read More</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="card">
+                                    <div class="card-head">
+                                          <h4>Help</h4>
+                                    </div>
+                                    <div class="card-body">
+                                          <div class="card-icon">
+                                                <span><i class="far fa-search"></i></span>
+                                          </div>
+                                    
+                                          <h3><a href="#">Lorem ipsum dolor sit amet consectetur</a></h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo ducimus </p>
+
+                                          <button type="button" id="readMoreBtn">Read More</button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- TESTIMONIAL -->
+      <section class="testimonial">
+            <div class="container">
+                  <div class="row">
+                        <div class="testimonial-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus molestias facere neque nobis excepturi laborum sint odio, laudantium mollitia impedit.</p>
+                              <h5>Jack Calso</h5>
+                              <div class="arrow">
+                              <div class="arrow">
+                                    <i class="far fa-angle-left left"></i>
+                                    <i class="far fa-angle-right right"></i>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer class="footer">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-6">
+                              <div class="copy-right">
+                                    <p>&copy; All Right Resarved 2021</p>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                              <div class="foot-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fas fa-wifi"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+
       <!-- !SCRIPT LINKS -->
-      <!-- <script src="assets/js/main.js"></script> -->
+      <script src="assets/js/main.js"></script>
 </body>
 </html>
